@@ -60,7 +60,8 @@ public class UserServiceImpl implements UserService {
            throw new UserAlreadyExistsException("user already exists") ;
         }
         return savedUser;
-    }    @Override
+    }
+    @Override
     public List<User> getAllUsers()
     {        return userRepository.findAll();
     }
